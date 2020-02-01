@@ -3,6 +3,7 @@
 
     COMMENT = remOS Ports
 
+    SUBDIR += pc-installdialog
     SUBDIR += pc-sysinstall
     SUBDIR += poudriere-trueos  
     SUBDIR += sysup  
