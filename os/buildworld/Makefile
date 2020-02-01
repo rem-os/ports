@@ -74,7 +74,7 @@ do-install:
 	elif [ -n "${MANIFEST}" -a -e "${MANIFEST}" ] ; then \
 		${INSTALL_SCRIPT} ${MANIFEST} ${STAGEDIR}/world/var/db/remos-manifest.json ; \
 	fi
-	${TAR} cvJf ${STAGEDIR}/${OS_WORLDDIST} -C ${STAGEDIR}/world .
+	${TAR} -cv --zstd -f ${STAGEDIR}/${OS_WORLDDIST} -C ${STAGEDIR}/world .
 	${CHFLAGS} -R noschg ${STAGEDIR}/world
 	${RM} -rf ${STAGEDIR}/world
 
