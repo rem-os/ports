@@ -2611,7 +2611,7 @@ VALID_CATEGORIES+= accessibility afterstep arabic archivers astro audio \
 	lang linux lisp \
 	mail mate math mbone misc multimedia \
 	net net-im net-mgmt net-p2p net-vpn news \
-	parallel pear perl5 plan9 polish ports-mgmt portuguese \
+	parallel pear perl5 plan9 polish ports-mgmt portuguese os remos\
 	print python ruby rubygems russian \
 	scheme science security shells spanish sysutils \
 	tcl textproc tk \
