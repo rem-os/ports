@@ -7,7 +7,7 @@ PKGNAMEPREFIX=	${OS_PKGNAMEPREFIX}
 DISTFILES=
 EXTRACT_ONLY=
 
-MAINTAINER=	kmoore@FreeBSD.org
+MAINTAINER=	darkfiberiru@remos.dev	
 COMMENT=	Distribution tarball of kernel for packaging
 
 SRCDIR?=/usr/src
@@ -75,7 +75,7 @@ do-install:
 		${MFLAGS} \
 		DESTDIR=${STAGEDIR}/kernel \
 		installkernel
-	${TAR} cvJf ${STAGEDIR}/${OS_KERNDIST} -C ${STAGEDIR}/kernel .
+	${TAR} -cv --zstd -f ${STAGEDIR}/${OS_KERNDIST} -C ${STAGEDIR}/kernel .
 	${CHFLAGS} -R noschg ${STAGEDIR}/kernel
 	${RM} -rf ${STAGEDIR}/kernel
 
