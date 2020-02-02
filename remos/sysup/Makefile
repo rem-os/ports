@@ -3,7 +3,7 @@
 PORTNAME=	sysup
 PORTVERSION=	0.8.6
 DISTVERSIONPREFIX=	v
-CATEGORIES=	sysutils
+CATEGORIES=	remos sysutils
 
 MAINTAINER=	darkfiberiru@gmail.com
 COMMENT=	System Update Utility

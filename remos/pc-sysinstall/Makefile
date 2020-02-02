@@ -4,7 +4,7 @@
 PORTNAME=	pc-sysinstall
 PORTVERSION=	2019091400
 PORTEPOCH=	1
-CATEGORIES=	sysutils
+CATEGORIES=	remos sysutils
 
 MAINTAINER=	kmoore@FreeBSD.org
 COMMENT=	TrueOS install backend

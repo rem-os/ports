@@ -2,7 +2,7 @@
 
 PORTNAME=	poudriere
 DISTVERSION=	2019122500
-CATEGORIES=	ports-mgmt
+CATEGORIES=	remos ports-mgmt
 PKGNAMESUFFIX=	-pkgbase
 
 MAINTAINER= darkfiberiru@remos.dev	

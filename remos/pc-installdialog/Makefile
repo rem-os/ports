@@ -4,7 +4,7 @@
 PORTNAME=	pc-installdialog
 PORTVERSION=	2019070400
 PORTEPOCH=	1
-CATEGORIES=	sysutils
+CATEGORIES=	remos sysutils
 
 MAINTAINER=	kmoore@FreeBSD.org
 COMMENT=	TrueOS Text Installer
