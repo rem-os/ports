@@ -5,7 +5,7 @@
 
     SUBDIR += pc-installdialog
     SUBDIR += pc-sysinstall
-    SUBDIR += poudriere-trueos  
+    SUBDIR += poudriere-pkgbase
     SUBDIR += sysup  
 
 .include <bsd.port.subdir.mk>

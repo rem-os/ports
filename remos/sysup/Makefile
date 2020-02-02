@@ -5,7 +5,7 @@ PORTVERSION=	0.8.6
 DISTVERSIONPREFIX=	v
 CATEGORIES=	sysutils
 
-MAINTAINER=	kris@ixsystems.com
+MAINTAINER=	darkfiberiru@gmail.com
 COMMENT=	System Update Utility
 
 LICENSE=	BSD2CLAUSE
@@ -16,7 +16,7 @@ RUN_DEPENDS=	${LOCALBASE}/sbin/beadm:sysutils/beadm
 USES=		go
 
 USE_GITHUB=	yes
-GH_ACCOUNT=	trueos
+GH_ACCOUNT=	rem-os
 
 GH_TUPLE=	gorilla:websocket:v1.4.0:websocket/src/github.com/gorilla/websocket
 
