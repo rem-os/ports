@@ -2616,6 +2616,7 @@ VALID_CATEGORIES+= accessibility afterstep arabic archivers astro audio \
 	scheme science security shells spanish sysutils \
 	tcl textproc tk \
 	ukrainian vietnamese wayland windowmaker www \
+	os remos \
 	x11 x11-clocks x11-drivers x11-fm x11-fonts x11-servers x11-themes \
 	x11-toolkits x11-wm xfce zope base
 
