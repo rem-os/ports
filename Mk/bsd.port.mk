@@ -4318,6 +4318,7 @@ PKG_NOTES_ENV+=	dp_PKG_NOTE_${note}=${PKG_NOTE_${note}:Q}
 create-manifest:
 	@${SETENV} \
 			dp_SCRIPTSDIR='${SCRIPTSDIR}'                         \
+			dp_ABISTRING='${PKG_ABISTRING}'                       \
 			dp_ACTUAL_PACKAGE_DEPENDS='${ACTUAL-PACKAGE-DEPENDS}' \
 			dp_CATEGORIES='${CATEGORIES:u:S/$/,/}'                \
 			dp_COMMENT=${COMMENT:Q}                               \
@@ -4348,6 +4349,7 @@ create-manifest:
 			dp_PREFIX='${PREFIX}'                                 \
 			dp_USERS='${USERS:u:S/$/,/}'                          \
 			dp_WWW='${WWW}'                                       \
+			db_VITAL='${PKGVITAL}'                                \
 			${PKG_NOTES_ENV}                                      \
 			${SH} ${SCRIPTSDIR}/create-manifest.sh
 
