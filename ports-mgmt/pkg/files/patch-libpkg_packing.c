@@ -1,4 +1,4 @@
---- libpkg/packing.c.orig	2019-09-18 07:11:10 UTC
+--- libpkg/packing.c.orig	2020-02-11 08:21:19 UTC
 +++ libpkg/packing.c
 @@ -316,14 +316,14 @@ packing_set_format(struct archive *a, pkg_formats form
  
