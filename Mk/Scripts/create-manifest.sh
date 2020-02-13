@@ -58,11 +58,11 @@ EOT
 [ -z "${dp_USERS}" ] || echo "users: [ ${dp_USERS} ]"
 [ -z "${dp_GROUPS}" ] || echo "groups: [ ${dp_GROUPS} ]"
 if [ -n "${dp_NO_ARCH}" -a -z "${dp_ABISTRING}" ] ; then
-       echo "arch : $(${dp_PKG_BIN} config abi | tr '[:upper:]' '[:lower:]' | cut -d: -f1,2
-       echo "abi : $(${dp_PKG_BIN} config abi | cut -d: -f1,2
+	echo "arch : $(${dp_PKG_BIN} config abi | tr '[:upper:]' '[:lower:]' | cut -d: -f1,2):*"
+	echo "abi : $(${dp_PKG_BIN} config abi | cut -d: -f1,2):*"
 elif [ -n "${dp_ABISTRING}" ] ; then
-       echo "arch : $(echo ${dp_ABISTRING} | tr '[:upper:]' '[:lower:]'
-       echo "abi : $(echo ${dp_ABISTRING}
+	echo "arch : $(echo ${dp_ABISTRING} | tr '[:upper:]' '[:lower:]')"
+	echo "abi : $(echo ${dp_ABISTRING})"
 fi
 [ -n "${dp_VITAL}" ] && echo "vital: true"
 
