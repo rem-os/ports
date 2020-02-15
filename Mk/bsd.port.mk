@@ -4309,7 +4309,7 @@ ACTUAL-PACKAGE-DEPENDS?= \
 	for lib in ${LIB_DEPENDS:C/\:.*//}; do \
 		depfiles="$$depfiles `${SETENV} LIB_DIRS="${LIB_DIRS}" LOCALBASE="${LOCALBASE}" ${SH} ${SCRIPTSDIR}/find-lib.sh $${lib}`" ; \
 	done ; \
-	${SETENV} PKG_BIN="${PKG_BIN}" ${SH} ${SCRIPTSDIR}/actual-package-depends.sh $${depfiles} ${RUN_DEPENDS:C/(.*)\:.*/"\1"/}
+	${SETENV} PKG_BIN="${PKG_BIN}" PORTSDIR="${PORTSDIR}" ${SH} ${SCRIPTSDIR}/actual-package-depends.sh $${depfiles} ${RUN_DEPENDS:C/(.*)\:.*/"\1"/}
 
 PKG_NOTES_ENV?=
 .for note in ${PKG_NOTES}
@@ -4350,7 +4350,7 @@ create-manifest:
 			dp_PREFIX='${PREFIX}'                                 \
 			dp_USERS='${USERS:u:S/$/,/}'                          \
 			dp_WWW='${WWW}'                                       \
-			db_VITAL='${PKGVITAL}'                                \
+			dp_VITAL='${PKGVITAL}'                                \
 			${PKG_NOTES_ENV}                                      \
 			${SH} ${SCRIPTSDIR}/create-manifest.sh
 
