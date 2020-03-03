@@ -27,12 +27,6 @@ NEED_ROOT=	yes
 WRKSRC=	${LOCAL_SDIR}/${PORTNAME}
 .endif
 
-# Set default non-debug config for HEAD / Other
-.if exists(${SRCDIR}/sys/${ARCH}/conf/GENERIC-NODEBUG)
-KERNCONF?=	GENERIC-NODEBUG
-.else
-KERNCONF?=	GENERIC
-.endif
 
 .if defined(_MAKE_JOBS_NUMBER)
 JOBFLAG=	-j ${_MAKE_JOBS_NUMBER}
@@ -50,6 +44,13 @@ MCONF=
 .include "../buildworld/Makefile.options.desc"
 
 .include <bsd.port.pre.mk>
+
+# Set default non-debug config for HEAD / Other
+.if exists(${SRCDIR}/sys/${ARCH}/conf/GENERIC-NODEBUG)
+KERNCONF?=	GENERIC-NODEBUG
+.else
+KERNCONF?=	GENERIC
+.endif
 
 .for var in ${OPTIONS_DEFINE}
 .if !${PORT_OPTIONS:M${var}}
