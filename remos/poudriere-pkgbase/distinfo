@@ -1,3 +1,3 @@
-TIMESTAMP = 1577316004
-SHA256 (trueos-poudriere-2019122500-5f09636_GH0.tar.gz) = ecf1c7b21a2d10228e7f1056aaa040551bd851b1538ec77faf27c3a703d69e4b
-SIZE (trueos-poudriere-2019122500-5f09636_GH0.tar.gz) = 4411073
+TIMESTAMP = 1587585770
+SHA256 (rem-os-poudriere-pkgbase-2020042200-4c546e3_GH0.tar.gz) = 365cd44da6ec2d41dd9a32286ad38e75917c70eb1d16baefafa3be6dab093677
+SIZE (rem-os-poudriere-pkgbase-2020042200-4c546e3_GH0.tar.gz) = 4421581
