@@ -1,6 +1,6 @@
 PORTNAME=	qemu
 PORTVERSION=	3.1.0
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	emulators
 PKGNAMESUFFIX=	-user-static-devel
 DIST_SUBDIR=	qemu/${PORTVERSION}
@@ -31,7 +31,6 @@ BUILD_DEPENDS+=	${LOCALBASE}/lib/libglib-2.0.a:devel/glib20
 
 .include <bsd.port.pre.mk>
 
-INSTALL_PROGRAM = /usr/bin/install -c -o root -g wheel -s -m 754
 
 CONFIGURE_ARGS+=	--localstatedir=/var
 CONFIGURE_ARGS+=	--extra-ldflags=-L${LOCALBASE}/lib
@@ -75,7 +74,6 @@ post-install:
 	@${MV} ${WRKDIR}/rc.d ${STAGEDIR}${PREFIX}/etc
 	@${RM} -r ${STAGEDIR}${PREFIX}/man
 	@${RM} -r ${STAGEDIR}${DATADIR}
-	@${STRIP_CMD} ${STAGEDIR}${PREFIX}/bin/qemu-*
 	@(cd ${STAGEDIR}${PREFIX}/bin && \
 		for i in qemu-*; do ${MV} -i $$i $$i-static; done)
 
