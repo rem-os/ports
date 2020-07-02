@@ -31,6 +31,8 @@ BUILD_DEPENDS+=	${LOCALBASE}/lib/libglib-2.0.a:devel/glib20
 
 .include <bsd.port.pre.mk>
 
+INSTALL_PROGRAM = /usr/bin/install -c -o root -g wheel -s -m 754
+
 CONFIGURE_ARGS+=	--localstatedir=/var
 CONFIGURE_ARGS+=	--extra-ldflags=-L${LOCALBASE}/lib
 CONFIGURE_ARGS+=	--extra-cflags=-I${LOCALBASE}/include
