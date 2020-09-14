@@ -1,7 +1,7 @@
 # $FreeBSD$
 
 PORTNAME=	poudriere
-DISTVERSION=	2020042200
+DISTVERSION=	2020091400
 CATEGORIES=	remos ports-mgmt
 PKGNAMESUFFIX=	-pkgbase
 
@@ -15,7 +15,7 @@ CONFLICTS_INSTALL=	poudriere-[0-9]*
 USE_GITHUB=	yes
 GH_ACCOUNT=	rem-os	
 GH_PROJECT=	poudriere-pkgbase
-GH_TAGNAME=	4c546e3
+GH_TAGNAME=	da366c5
 
 
 
