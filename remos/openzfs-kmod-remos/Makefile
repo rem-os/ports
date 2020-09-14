@@ -1,6 +1,6 @@
 # $FreeBSD
 
-MASTERDIR=	${.CURDIR}/../../sysutils/openzfs-KMOD
+MASTERDIR=	${.CURDIR}/../../sysutils/openzfs-kmod
 
 .include	"${MASTERDIR}/Makefile"
 

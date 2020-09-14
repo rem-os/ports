@@ -3,6 +3,7 @@
 
     COMMENT = remOS Ports
 
+    SUBDIR += openzfs-kmod-remos
     SUBDIR += pc-installdialog
     SUBDIR += pc-sysinstall
     SUBDIR += poudriere-pkgbase
