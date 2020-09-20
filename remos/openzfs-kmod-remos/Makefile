@@ -20,7 +20,7 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	openzfs
 GH_PROJECT=	zfs
 GH_TAGNAME=	c494aa7
-KMODTARGET?=    openzfs-remos.ko    
+KMODTARGET?=    openzfs_remos.ko    
 
 PLIST_FILES=	${KMODDIR}/${KMODTARGET}
 
