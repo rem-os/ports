@@ -1,5 +1,5 @@
-TIMESTAMP = 1587585024
-SHA256 (rem-os-sysup-v0.9.0_GH0.tar.gz) = 421d63567b630dc2453258d2e6e9fca32fa59036fcc8f82abaecb318ceecaf50
-SIZE (rem-os-sysup-v0.9.0_GH0.tar.gz) = 55231
+TIMESTAMP = 1612804529
+SHA256 (rem-os-sysup-v0.9.1_GH0.tar.gz) = a596ebe5a0a1b0fde7f847d21e10b00d035276c01438174eb341464db6f38e06
+SIZE (rem-os-sysup-v0.9.1_GH0.tar.gz) = 55288
 SHA256 (gorilla-websocket-v1.4.0_GH0.tar.gz) = 2b5743c72bd0930c5a80e49c0138b5b7d27fa7c085efd0c86805cccfa7220c9d
 SIZE (gorilla-websocket-v1.4.0_GH0.tar.gz) = 50228
