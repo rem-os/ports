@@ -181,8 +181,10 @@
     SUBDIR += xhomer
     SUBDIR += xsystem35
     SUBDIR += xzx
+    SUBDIR += yaze-ag
     SUBDIR += yuzu
     SUBDIR += yuzu-qt5
+    SUBDIR += z80pack
     SUBDIR += zsnes
 
 .include <bsd.port.subdir.mk>

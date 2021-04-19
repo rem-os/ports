@@ -1,10 +1,11 @@
 PORTNAME=	wlroots
 DISTVERSION=	0.13.0
+PORTREVISION=	2
 CATEGORIES=	x11-toolkits
 
 PATCH_SITES=	https://github.com/${GH_ACCOUNT}/${GH_PROJECT}/commit/
 PATCHFILES+=	7c0e2a271a4c.patch:-p1 # https://github.com/swaywm/wlroots/pull/2064
-PATCHFILES+=	d3b759ac5f08.patch:-p1 # https://github.com/swaywm/wlroots/pull/2064
+PATCHFILES+=	e1b5323f56c3.patch:-p1 # https://github.com/swaywm/wlroots/pull/2064
 
 MAINTAINER=	jbeich@FreeBSD.org
 COMMENT=	Modular Wayland compositor library
@@ -31,23 +32,20 @@ USE_LDCONFIG=	yes
 GH_ACCOUNT=	swaywm
 MESON_ARGS=	-Dexamples=false
 
-OPTIONS_DEFINE=	CONSOLEKIT LIBSEAT UUID X11
+OPTIONS_DEFINE=	LIBSEAT NVIDIA UUID X11
 OPTIONS_DEFAULT=LIBSEAT UUID X11
 OPTIONS_SUB=	yes
-
-CONSOLEKIT_DESC=	DRM sessions without root via ConsoleKit2 (experimental)
-CONSOLEKIT_PATCH_SITES=	https://github.com/unrelentingtech/${GH_PROJECT}/commit/:ck2
-CONSOLEKIT_PATCHFILES=	fb837ae10b1f.patch:-p1:ck2 # https://github.com/swaywm/wlroots/pull/1467
-CONSOLEKIT_LIB_DEPENDS=	libdbus-1.so:devel/dbus \
-			libconsolekit.so:sysutils/consolekit2
-CONSOLEKIT_MESON_ENABLED=	consolekit2
-.if make(makesum)
-.MAKEFLAGS:		WITH+=CONSOLEKIT
-.endif
 
 LIBSEAT_DESC=		DRM sessions with/without root via libseat
 LIBSEAT_LIB_DEPENDS=	libseat.so:sysutils/seatd
 LIBSEAT_MESON_ENABLED=	libseat
+
+NVIDIA_DESC=		EGLStreams support for DRM backend (experimental)
+NVIDIA_PATCH_SITES=	https://github.com/danvd/${GH_PROJECT}-eglstreams/commit/:nvidia
+NVIDIA_PATCHFILES=	eba4b66f92ca.patch:-p1:nvidia # https://github.com/swaywm/wlroots/pull/2769
+.if make(makesum)
+.MAKEFLAGS:		WITH+=NVIDIA
+.endif
 
 # uuid_create() is random on NetBSD and OpenBSD but not DragonFly and FreeBSD
 # See also https://github.com/netbsd/src/commit/8651e9a438af

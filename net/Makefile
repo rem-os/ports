@@ -158,7 +158,6 @@
     SUBDIR += fping
     SUBDIR += freebsd-uucp
     SUBDIR += freediameter
-    SUBDIR += freenet6
     SUBDIR += freeradius-client
     SUBDIR += freeradius3
     SUBDIR += freerdp
@@ -1473,7 +1472,6 @@
     SUBDIR += toonel
     SUBDIR += torsocks
     SUBDIR += traefik
-    SUBDIR += traefik2
     SUBDIR += traff
     SUBDIR += trafshow
     SUBDIR += trafshow3

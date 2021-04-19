@@ -6,6 +6,7 @@
     SUBDIR += avida
     SUBDIR += babel
     SUBDIR += bamtools
+    SUBDIR += bbmap
     SUBDIR += bcftools
     SUBDIR += bedtools
     SUBDIR += bioawk
@@ -84,6 +85,7 @@
     SUBDIR += ncbi-blast+
     SUBDIR += ncbi-cxx-toolkit
     SUBDIR += ncbi-toolkit
+    SUBDIR += ncbi-vdb
     SUBDIR += ngs-sdk
     SUBDIR += p5-AcePerl
     SUBDIR += p5-Bio-ASN1-EntrezGene
@@ -122,9 +124,11 @@
     SUBDIR += protomol
     SUBDIR += psi88
     SUBDIR += py-Genesis-PyAPI
+    SUBDIR += py-bigwig
     SUBDIR += py-biom-format
     SUBDIR += py-biopython
     SUBDIR += py-bx-python
+    SUBDIR += py-crossmap
     SUBDIR += py-cutadapt
     SUBDIR += py-dnaio
     SUBDIR += py-ete3
@@ -145,6 +149,7 @@
     SUBDIR += python-nexus
     SUBDIR += rainbow
     SUBDIR += rampler
+    SUBDIR += readseq
     SUBDIR += recombine
     SUBDIR += ruby-bio
     SUBDIR += rubygem-bio
@@ -158,10 +163,12 @@
     SUBDIR += seqan-apps
     SUBDIR += seqan1
     SUBDIR += seqio
+    SUBDIR += seqkit
     SUBDIR += seqtk
     SUBDIR += sim4
     SUBDIR += slclust
     SUBDIR += smithwaterman
+    SUBDIR += snpeff
     SUBDIR += spoa
     SUBDIR += stacks
     SUBDIR += star
