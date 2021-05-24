@@ -1,12 +1,12 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
 
 PORTNAME=	cartopy
-PORTVERSION=	0.18.0
-PORTREVISION=	2
+PORTVERSION=	0.19.0
+DISTVERSIONSUFFIX=	.post1
 CATEGORIES=	graphics python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
-DISTNAME=	Cartopy-${PORTVERSION}
+DISTNAME=	Cartopy-${DISTVERSIONFULL}
 
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Cartographic library with Matplotlib support for visualisation
@@ -16,7 +16,8 @@ LICENSE_FILE=	${WRKSRC}/COPYING.LESSER
 
 BUILD_DEPENDS=	geos>=3.3.3:graphics/geos \
 		proj>=4.9.0,1:graphics/proj \
-		${PYTHON_PKGNAMEPREFIX}numpy>=1.10,1:math/py-numpy@${PY_FLAVOR}
+		${PYTHON_PKGNAMEPREFIX}numpy>=1.10,1:math/py-numpy@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}setuptools_scm>=0:devel/py-setuptools_scm@${PY_FLAVOR}
 LIB_DEPENDS=	libgeos.so:graphics/geos \
 		libproj.so:graphics/proj
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}numpy>=1.10,1:math/py-numpy@${PY_FLAVOR} \
@@ -24,7 +25,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}numpy>=1.10,1:math/py-numpy@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}Shapely>=1.5.6:devel/py-shapely@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}six>=1.3.0:devel/py-six@${PY_FLAVOR}
 
-USES=		python:3.6+
+USES=		python:3.7+
 USE_PYTHON=	autoplist concurrent cython distutils
 
 CPPFLAGS+=	-DACCEPT_USE_OF_DEPRECATED_PROJ_API_H

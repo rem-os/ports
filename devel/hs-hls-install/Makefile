@@ -1,5 +1,6 @@
 PORTNAME=	hls-install
 DISTVERSION=	1.1.0
+PORTREVISION=	1
 CATEGORIES=	devel haskell
 
 MAINTAINER=	haskell@FreeBSD.org
@@ -64,11 +65,12 @@ USE_CABAL=	Cabal-3.4.0.0 \
 		vector-0.12.3.0 \
 		vector-binary-instances-0.2.5.2
 
+CABAL_PROJECT=	remove
+
 WRKSRC_SUBDIR=	install
 NOT_FOR_ARCHS=	i386
 
 post-extract:
-	${RM} ${WRKSRC}/cabal.project
 	echo "executable hls-install" >> ${WRKSRC}/hls-install.cabal
 	echo "  main-is: ../install.hs" >> ${WRKSRC}/hls-install.cabal
 	echo "  build-depends: hls-install"  >> ${WRKSRC}/hls-install.cabal

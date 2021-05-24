@@ -1,20 +1,20 @@
 PORTNAME=	yuzu
-PORTVERSION=	s20210417
+PORTVERSION=	s20210520
 PORTREVISION?=	0
 CATEGORIES=	emulators
 
 PATCH_SITES=	https://github.com/${GH_ACCOUNT}/${GH_PROJECT}/commit/
-PATCHFILES+=	abf034785ed2.patch:-p1 # https://github.com/yuzu-emu/yuzu/pull/4836
-PATCHFILES+=	d37bd764e826.patch:-p1 # https://github.com/yuzu-emu/yuzu/pull/5896
-PATCHFILES+=	d04bf0f3726d.patch:-p1 # https://github.com/yuzu-emu/yuzu/pull/5896
-PATCHFILES+=	098eed11d05e.patch:-p1 # https://github.com/yuzu-emu/yuzu/pull/5896
-PATCHFILES+=	931b5dfb8af9.patch:-p1 # https://github.com/yuzu-emu/yuzu/pull/5896
-PATCHFILES+=	b2330ec6a431.patch:-p1 # https://github.com/yuzu-emu/yuzu/pull/5896
-PATCHFILES+=	21e69958e168.patch:-p1 # https://github.com/yuzu-emu/yuzu/pull/5896
-PATCHFILES+=	ffc1b3a3dd67.patch:-p1 # https://github.com/yuzu-emu/yuzu/pull/5896
-PATCHFILES+=	f736f4a65bc0.patch:-p1 # https://github.com/yuzu-emu/yuzu/pull/5896
-PATCHFILES+=	09b61318aa4f.patch:-p1 # https://github.com/yuzu-emu/yuzu/pull/5896
-PATCHFILES+=	4c3d3bbd2ad4.patch:-p1 # https://github.com/yuzu-emu/yuzu/pull/5896
+PATCHFILES+=	a2686843592e.patch:-p1 # https://github.com/yuzu-emu/yuzu/pull/4836 mainline-merge
+PATCHFILES+=	e2d5cff34554.patch:-p1 # https://github.com/yuzu-emu/yuzu/pull/5896 mainline-merge
+PATCHFILES+=	5e559324a080.patch:-p1 # https://github.com/yuzu-emu/yuzu/pull/5896 mainline-merge
+PATCHFILES+=	3bfdd34ce241.patch:-p1 # https://github.com/yuzu-emu/yuzu/pull/5896 mainline-merge
+PATCHFILES+=	234d7ded1c52.patch:-p1 # https://github.com/yuzu-emu/yuzu/pull/5896 mainline-merge
+PATCHFILES+=	2caf2f0fe288.patch:-p1 # https://github.com/yuzu-emu/yuzu/pull/5896 mainline-merge
+PATCHFILES+=	b9ff77485840.patch:-p1 # https://github.com/yuzu-emu/yuzu/pull/5896 mainline-merge
+PATCHFILES+=	26907dfe941c.patch:-p1 # https://github.com/yuzu-emu/yuzu/pull/5896 mainline-merge
+PATCHFILES+=	043027f85b64.patch:-p1 # https://github.com/yuzu-emu/yuzu/pull/5896 mainline-merge
+PATCHFILES+=	169384b954b9.patch:-p1 # https://github.com/yuzu-emu/yuzu/pull/5896 mainline-merge
+PATCHFILES+=	16a67d43d9a4.patch:-p1 # https://github.com/yuzu-emu/yuzu/pull/5896 mainline-merge
 
 MAINTAINER=	jbeich@FreeBSD.org
 COMMENT=	Nintendo Switch emulator/debugger
@@ -35,6 +35,7 @@ BUILD_DEPENDS=	catch>0:devel/catch \
 		nlohmann-json>0:devel/nlohmann-json \
 		glslangValidator:graphics/glslang
 LIB_DEPENDS=	liblz4.so:archivers/liblz4 \
+		libzip.so:archivers/libzip \
 		libzstd.so:archivers/zstd \
 		libopus.so:audio/opus \
 		libboost_context.so:devel/boost-libs \
@@ -42,8 +43,8 @@ LIB_DEPENDS=	liblz4.so:archivers/liblz4 \
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	yuzu-emu
-GH_TAGNAME=	ce921e0f2
-GH_TUPLE=	yuzu-emu:mbedtls:v2.16.9-52-geac2416b8:mbedtls/externals/mbedtls \
+GH_TAGNAME=	5068279f2
+GH_TUPLE=	yuzu-emu:mbedtls:v2.16.9-115-g8c88150ca:mbedtls/externals/mbedtls \
 		KhronosGroup:SPIRV-Headers:2c51218:SPIRV_Headers/externals/sirit/externals/SPIRV-Headers \
 		KhronosGroup:Vulkan-Headers:v1.2.145:Vulkan_Headers/externals/Vulkan-Headers \
 		MerryMage:dynarmic:r4-219-gb2a4da5e:dynarmic/externals/dynarmic \
@@ -52,17 +53,16 @@ GH_TUPLE=	yuzu-emu:mbedtls:v2.16.9-52-geac2416b8:mbedtls/externals/mbedtls \
 		citra-emu:ext-soundtouch:060181e:soundtouch/externals/soundtouch \
 		fmtlib:fmt:7.1.2:fmt/externals/fmt \
 		herumi:xbyak:v5.96:xbyak/externals/xbyak \
-		nih-at:libzip:rel-1-5-2-93-g89bd6d63:libzip/externals/libzip/libzip \
 		kinetiknz:cubeb:cubeb-0.2-1298-g8d53747:cubeb/externals/cubeb \
 		benhoyt:inih:r52:inih/externals/inih/inih
 
-USES=		cmake compiler:c++17-lang localbase:ldflags sdl ssl
+USES=		cmake:testing compiler:c++17-lang localbase:ldflags sdl ssl
 USE_GCC=	yes:build # libc++ lacks std::atomic_ref, std::ranges
 USE_SDL=	sdl2
+CMAKE_ON=	YUZU_ALLOW_SYSTEM_SDL2
 CMAKE_OFF=	ENABLE_GNUTLS ENABLE_MBEDTLS
 LDFLAGS+=	-static-libstdc++ # avoid libc++ conflict, requires files/patch-fmt
 LDFLAGS+=	-Wl,--as-needed # Qt5Network
-TEST_TARGET=	test
 
 OPTIONS_DEFINE=	ALSA PULSEAUDIO JACK SNDIO VULKAN
 OPTIONS_DEFAULT=PULSEAUDIO JACK SNDIO VULKAN

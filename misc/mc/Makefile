@@ -6,7 +6,7 @@ CATEGORIES=	misc shells
 MASTER_SITES=	http://ftp.midnight-commander.org/ \
 		https://ftp.osuosl.org/pub/midnightcommander/
 
-MAINTAINER=	woodsb02@FreeBSD.org
+MAINTAINER=	danfe@FreeBSD.org
 COMMENT=	Midnight Commander, a free Norton Commander Clone
 
 LICENSE=	GPLv3+
@@ -61,7 +61,7 @@ X11_CONFIGURE_ENABLE=	x
 X11_USES=		xorg
 X11_USE=		xorg=x11,xext
 X11_VARS=		CONFLICTS_INSTALL+="mc-nox11-[0-9]*"
-X11_VARS_OFF=		CONFLICTS_INSTALL+="mc-[0-9]*" PKGNAMESUFFIX=-nox11
+X11_VARS_OFF=		CONFLICTS_INSTALL+="mc-[0-9]*"
 
 PORTDOCS=	*
 

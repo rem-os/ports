@@ -1,7 +1,7 @@
 # Created by: Bernard Spil <brnrd@FreeBSD.org>
 
 PORTNAME=	libressl
-PORTVERSION=	3.3.2
+PORTVERSION=	3.3.3
 CATEGORIES=	security devel
 MASTER_SITES=	OPENBSD/LibreSSL
 PKGNAMESUFFIX=	-devel
@@ -20,7 +20,7 @@ libtls_PLIST=	pkg-plist-libtls
 
 CPE_VENDOR=	openbsd
 
-OPTIONS_DEFINE=	MAN3 NC
+OPTIONS_DEFINE=	LIBTLS MAN3 NC
 OPTIONS_DEFAULT=	MAN3 NC
 LIBTLS_DESC=	Only install libtls (no libcrypto/libssl)
 MAN3_DESC=	Install API manpages (section 3)

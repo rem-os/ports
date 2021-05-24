@@ -45,8 +45,7 @@
     SUBDIR += ansible-kld
     SUBDIR += ansible-sshjail
     SUBDIR += ansible-sysrc
-    SUBDIR += ansible27
-    SUBDIR += ansible28
+    SUBDIR += ansible2
     SUBDIR += anvil
     SUBDIR += apache-mesos
     SUBDIR += apachetop
@@ -174,6 +173,7 @@
     SUBDIR += cfengine317
     SUBDIR += chaoskube
     SUBDIR += checkrestart
+    SUBDIR += chezmoi
     SUBDIR += chgrep
     SUBDIR += choria
     SUBDIR += chyves
@@ -207,6 +207,7 @@
     SUBDIR += consul-replicate
     SUBDIR += consul_exporter
     SUBDIR += container-diff
+    SUBDIR += containerd
     SUBDIR += contractor
     SUBDIR += copytape
     SUBDIR += coreos-ct
@@ -258,6 +259,7 @@
     SUBDIR += direnv
     SUBDIR += direvent
     SUBDIR += dirvish
+    SUBDIR += discus
     SUBDIR += diskcheckd
     SUBDIR += diskimage-tools
     SUBDIR += diskonaut
@@ -557,6 +559,7 @@
     SUBDIR += k3b
     SUBDIR += k4dirstat
     SUBDIR += k8temp
+    SUBDIR += k9s
     SUBDIR += kbackup
     SUBDIR += kcron
     SUBDIR += kdeadmin
@@ -642,6 +645,7 @@
     SUBDIR += lxqt-admin
     SUBDIR += lxqt-config
     SUBDIR += lxqt-policykit
+    SUBDIR += lxqt-powermanagement
     SUBDIR += lxqt-qtplugin
     SUBDIR += lxsplit
     SUBDIR += lxtask
@@ -784,8 +788,10 @@
     SUBDIR += ohmu
     SUBDIR += omnibackup
     SUBDIR += onefetch
+    SUBDIR += opa
     SUBDIR += open
     SUBDIR += opencorsairlink
+    SUBDIR += opendircolors
     SUBDIR += openipmi
     SUBDIR += opensbi
     SUBDIR += openseachest
@@ -796,6 +802,7 @@
     SUBDIR += openzfs
     SUBDIR += openzfs-kmod
     SUBDIR += osinfo-db-tools
+    SUBDIR += p5-App-Regather
     SUBDIR += p5-App-RunCron
     SUBDIR += p5-App-ZFSCurses
     SUBDIR += p5-BSD-Jail-Object
@@ -887,6 +894,7 @@
     SUBDIR += paicc
     SUBDIR += paladin
     SUBDIR += pam_mount
+    SUBDIR += pam_xdg
     SUBDIR += panicmail
     SUBDIR += parafly
     SUBDIR += parallel
@@ -945,14 +953,13 @@
     SUBDIR += plasma5-ksysguard
     SUBDIR += plasma5-libksysguard
     SUBDIR += plasma5-plasma-disks
+    SUBDIR += plasma5-plasma-systemmonitor
     SUBDIR += plasma5-polkit-kde-agent-1
     SUBDIR += plasma5-powerdevil
     SUBDIR += plasma5-systemsettings
     SUBDIR += plconfig
     SUBDIR += pmt
     SUBDIR += pnscan
-    SUBDIR += policykit
-    SUBDIR += policykit-gnome
     SUBDIR += polkit
     SUBDIR += polkit-gnome
     SUBDIR += polkit-qt
@@ -986,6 +993,9 @@
     SUBDIR += pwol
     SUBDIR += pwsafe
     SUBDIR += pxattr
+    SUBDIR += pxp-agent
+    SUBDIR += py-ansible-base
+    SUBDIR += py-ansible-core
     SUBDIR += py-ansible-lint
     SUBDIR += py-ansible-runner
     SUBDIR += py-azure-cli
@@ -1541,6 +1551,7 @@
     SUBDIR += zap
     SUBDIR += zbackup
     SUBDIR += zeitgeist
+    SUBDIR += zellij
     SUBDIR += zeroer
     SUBDIR += zetaback
     SUBDIR += zetaback-devel

@@ -2,7 +2,7 @@
 
 PORTNAME=	sage
 PORTVERSION=	9.2
-PORTREVISION=	12
+PORTREVISION=	13
 CATEGORIES=	math
 MASTER_SITES=	https://mirrors.xmission.com/sage/src/		\
 		http://mirrors.xmission.com/sage/src/		\
@@ -54,7 +54,7 @@ BUILD_DEPENDS=	bash:shells/bash		\
 		${PYTHON_PKGNAMEPREFIX}Jinja2>0i:devel/py-Jinja2@${PY_FLAVOR}\
 		${PYTHON_PKGNAMEPREFIX}jedi>0:devel/py-jedi@${PY_FLAVOR}\
 		${PYTHON_PKGNAMEPREFIX}jsonschema>0:devel/py-jsonschema@${PY_FLAVOR}\
-		${PYTHON_PKGNAMEPREFIX}jupyter_core>0:devel/py-jupyter_core@${PY_FLAVOR}\
+		${PYTHON_PKGNAMEPREFIX}jupyter-core>0:devel/py-jupyter-core@${PY_FLAVOR}\
 		${PYTHON_PKGNAMEPREFIX}jupyter_client>0:devel/py-jupyter_client@${PY_FLAVOR}\
 		${PYTHON_PKGNAMEPREFIX}kiwisolver>0:math/py-kiwisolver@${PY_FLAVOR}\
 		${PYTHON_PKGNAMEPREFIX}markupsafe>0:textproc/py-markupsafe@${PY_FLAVOR}\
@@ -142,7 +142,6 @@ BUILD_DEPENDS=	bash:shells/bash		\
 		pari-nftables>0:math/pari_nftables	\
 		pari-seadata>0:math/pari_seadata\
 		QuadraticSieve:math/flintqs	\
-		ninja:devel/ninja		\
 		gpatch:devel/patch		\
 		rubiks>0:math/rubiks		\
 		sympow:math/sympow		\
@@ -252,7 +251,7 @@ RUN_DEPENDS=	bash:shells/bash		\
 		${PYTHON_PKGNAMEPREFIX}Jinja2>0:devel/py-Jinja2@${PY_FLAVOR}\
 		${PYTHON_PKGNAMEPREFIX}jedi>0:devel/py-jedi@${PY_FLAVOR}\
 		${PYTHON_PKGNAMEPREFIX}jsonschema>0:devel/py-jsonschema@${PY_FLAVOR}\
-		${PYTHON_PKGNAMEPREFIX}jupyter_core>0:devel/py-jupyter_core@${PY_FLAVOR}\
+		${PYTHON_PKGNAMEPREFIX}jupyter-core>0:devel/py-jupyter-core@${PY_FLAVOR}\
 		${PYTHON_PKGNAMEPREFIX}jupyter_client>0:devel/py-jupyter_client@${PY_FLAVOR}\
 		${PYTHON_PKGNAMEPREFIX}kiwisolver>0:math/py-kiwisolver@${PY_FLAVOR}\
 		${PYTHON_PKGNAMEPREFIX}markupsafe>0:textproc/py-markupsafe@${PY_FLAVOR}\
@@ -338,9 +337,10 @@ RUN_DEPENDS=	bash:shells/bash		\
 		yasm:devel/yasm			\
 		pixz:archivers/pixz
 
-USES=		autoreconf blaslapack:openblas compiler:c++11-lib fortran	\
-		gettext gmake gnome iconv jpeg libtool localbase ncurses perl5	\
-		pkgconfig python:3.7+ readline shebangfix sqlite tk xorg
+USES=		autoreconf blaslapack:openblas compiler:c++11-lib fortran \
+		gettext gmake gnome iconv jpeg libtool localbase ncurses \
+		ninja:build perl5 pkgconfig python:3.7+ readline shebangfix \
+		sqlite tk xorg
 USE_TEX=	latex:build pdftex:build tex:build
 USE_XORG=	x11 xext xscrnsaver
 USE_GNOME=	cairo glib20 pango

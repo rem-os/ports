@@ -158,6 +158,7 @@
     SUBDIR += libsdb
     SUBDIR += libzdb
     SUBDIR += linux-c7-sqlite3
+    SUBDIR += linux-c7-unixODBC
     SUBDIR += linux-oracle-instantclient-basic
     SUBDIR += linux-oracle-instantclient-sdk
     SUBDIR += liquibase
@@ -694,6 +695,14 @@
     SUBDIR += postgresql13-plpython
     SUBDIR += postgresql13-pltcl
     SUBDIR += postgresql13-server
+    SUBDIR += postgresql14-client
+    SUBDIR += postgresql14-contrib
+    SUBDIR += postgresql14-docs
+    SUBDIR += postgresql14-pgtcl
+    SUBDIR += postgresql14-plperl
+    SUBDIR += postgresql14-plpython
+    SUBDIR += postgresql14-pltcl
+    SUBDIR += postgresql14-server
     SUBDIR += postgresql95-client
     SUBDIR += postgresql95-contrib
     SUBDIR += postgresql95-docs
@@ -924,7 +933,6 @@
     SUBDIR += rubygem-flipper-active_record
     SUBDIR += rubygem-flipper-active_record017
     SUBDIR += rubygem-gdbm
-    SUBDIR += rubygem-gitlab-pg_query
     SUBDIR += rubygem-globalid
     SUBDIR += rubygem-globalid-rails5
     SUBDIR += rubygem-globalid-rails50

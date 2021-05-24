@@ -1,8 +1,10 @@
 bin/certificates
+bin/connect-test
+bin/crashcollect
 bin/inspector
+bin/metabase-createdat-migration
+bin/metabase-verify
 bin/metainfo-loop-benchmark
-bin/metainfo-migration
-bin/metainfo-verifier
 bin/metric-receiver
 bin/multinode
 bin/satellite

@@ -610,7 +610,6 @@
     SUBDIR += miscom
     SUBDIR += mkhexgrid
     SUBDIR += moagg
-    SUBDIR += monster-masher
     SUBDIR += monsterz
     SUBDIR += moon-buggy
     SUBDIR += moonlander
@@ -628,6 +627,7 @@
     SUBDIR += naev-data
     SUBDIR += narcissu2
     SUBDIR += nazghul
+    SUBDIR += nbsdgames
     SUBDIR += nehquake
     SUBDIR += neo-cowsay
     SUBDIR += nethack32
@@ -1007,6 +1007,7 @@
     SUBDIR += wargus
     SUBDIR += warmux
     SUBDIR += warzone2100
+    SUBDIR += weebsay
     SUBDIR += wesnoth
     SUBDIR += whichwayisup
     SUBDIR += widelands
@@ -1083,6 +1084,8 @@
     SUBDIR += xmris
     SUBDIR += xmulti
     SUBDIR += xneko
+    SUBDIR += xnethack
+    SUBDIR += xnethack-nox11
     SUBDIR += xoct
     SUBDIR += xoids
     SUBDIR += xoj

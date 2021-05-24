@@ -1,7 +1,7 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
 
 PORTNAME=	google-api-core
-PORTVERSION=	1.26.1
+PORTVERSION=	1.27.0
 CATEGORIES=	www python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -26,6 +26,7 @@ USE_PYTHON=	autoplist concurrent distutils
 NO_ARCH=	yes
 
 OPTIONS_DEFINE=	GRPC GRPCGCP
+OPTIONS_DEFAULT=GRPC
 GRPC_DESC=	gRPC support
 GRPCGCP_DESC=	gRPC support for GCP
 

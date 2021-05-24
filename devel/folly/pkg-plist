@@ -38,6 +38,7 @@ include/folly/File.h
 include/folly/FileUtil.h
 include/folly/Fingerprint.h
 include/folly/FixedString.h
+include/folly/FollyMemcpy.h
 include/folly/Format-inl.h
 include/folly/Format.h
 include/folly/FormatArg.h
@@ -505,6 +506,7 @@ include/folly/io/async/TimeoutManager.h
 include/folly/io/async/VirtualEventBase.h
 include/folly/io/async/WriteChainAsyncTransportWrapper.h
 include/folly/io/async/ssl/BasicTransportCertificate.h
+include/folly/io/async/ssl/OpenSSLTransportCertificate.h
 include/folly/io/async/ssl/OpenSSLUtils.h
 include/folly/io/async/ssl/SSLErrors.h
 include/folly/io/async/ssl/TLSDefinitions.h
@@ -627,7 +629,6 @@ include/folly/portability/Memory.h
 include/folly/portability/OpenSSL.h
 include/folly/portability/PThread.h
 include/folly/portability/Sched.h
-include/folly/portability/Semaphore.h
 include/folly/portability/Sockets.h
 include/folly/portability/Stdio.h
 include/folly/portability/Stdlib.h
@@ -710,6 +711,7 @@ include/folly/synchronization/HazptrThreadPoolExecutor.h
 include/folly/synchronization/LifoSem.h
 include/folly/synchronization/Lock.h
 include/folly/synchronization/MicroSpinLock.h
+include/folly/synchronization/NativeSemaphore.h
 include/folly/synchronization/ParkingLot.h
 include/folly/synchronization/PicoSpinLock.h
 include/folly/synchronization/RWSpinLock.h

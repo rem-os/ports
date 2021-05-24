@@ -10,6 +10,7 @@
     SUBDIR += bind911
     SUBDIR += bind916
     SUBDIR += bindgraph
+    SUBDIR += blocky
     SUBDIR += bundy
     SUBDIR += c-ares
     SUBDIR += cli53
@@ -57,6 +58,7 @@
     SUBDIR += dnswall
     SUBDIR += doc
     SUBDIR += dog
+    SUBDIR += doggo
     SUBDIR += doh-proxy
     SUBDIR += dq
     SUBDIR += drool
@@ -112,7 +114,6 @@
     SUBDIR += nsping
     SUBDIR += nss_mdns
     SUBDIR += nss_resinit
-    SUBDIR += opendd
     SUBDIR += opendnssec2
     SUBDIR += openresolv
     SUBDIR += p5-AnyEvent-CacheDNS

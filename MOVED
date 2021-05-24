@@ -7262,7 +7262,6 @@ www/qupzilla|www/qupzilla-qt4|2015-01-18|Renamed to differentiate from www/qupzi
 devel/p5-perlbrew|devel/p5-App-perlbrew|2015-01-19|Rename to match upstream naming
 devel/actor-framework|devel/caf|2015-01-19|Rename to match upstream naming
 textproc/py-charade||2015-01-28|Charade was merged back to textproc/py-chardet
-audio/qmidinet||2015-01-28|Has expired: Broken for more than 6 months
 audio/wmauda||2015-01-28|Has expired: Broken for more than 6 months
 audio/x11amp||2015-01-28|Has expired: Broken for more than 6 months
 devel/p5-Log-Any-Adapter|devel/p5-Log-Any|2015-01-28|Has expired: devel/p5-Log-Any-Adapter merged into devel/p5-Log-Any by upstream
@@ -10753,7 +10752,6 @@ audio/xmms-faad||2018-12-21|Has expired: Uses obsolete glib12
 audio/xmms-scrobbler||2018-12-21|Has expired: Uses obsolete glib12
 audio/mcplay||2018-12-21|Has expired: Uses obsolete glib12
 audio/gmixer||2018-12-21|Has expired: Uses obsolete glib12
-audio/soundtracker||2018-12-21|Has expired: Uses obsolete glib12
 audio/xmms-sapplug||2018-12-21|Has expired: Uses obsolete glib12, use audio/penguinsap instead
 audio/rio500||2018-12-21|Has expired: Uses obsolete glib12
 audio/xmmsctrl||2018-12-21|Has expired: Uses obsolete glib12
@@ -15130,7 +15128,6 @@ net/kblog||2020-08-13|No longer shipped
 www/py-html|www/py-html3|2020-08-13|python3-compatible version is named html3
 audio/py-hsaudiotag|audio/py-hsaudiotag3k|2020-08-13|python3-compatible version is named hsaudiotag3k
 archivers/py-backports.lzma||2020-08-15|Has expired: Uses deprecated version of python
-archivers/py-bup||2020-08-15|Has expired: Uses deprecated version of python
 archivers/py-librtfcomp||2020-08-15|Has expired: Uses deprecated version of python
 audio/blop-lv2||2020-08-15|Has expired: Uses deprecated version of python
 audio/bs2b-lv2||2020-08-15|Has expired: Uses deprecated version of python
@@ -16275,7 +16272,7 @@ dns/dnsmasq-devel|dns/dnsmasq|2021-04-08|Has expired: use dns/dnsmasq instead, w
 net/coturn|net/turnserver|2021-04-09|Remove duplicate port: coturn is another name for turnserver
 databases/percona55-server||2021-04-11|EOL upstream
 databases/percona55-client||2021-04-11|EOL upstream
-graphics/ilmbase|math/Imath|2021-04-10|Ilmbase was split out into Imath and OpenEXR.
+graphics/ilmbase|math/Imath|2021-04-11|Ilmbase was split out into Imath and OpenEXR
 www/xshttpd||2021-04-12|Unmaintained and dead upstream
 www/xshttpd-devel||2021-04-12|Unmaintained and dead upstream
 dns/credns||2021-04-12|Broken 12+, unmaintained upstream
@@ -16290,3 +16287,54 @@ www/grafana4|www/grafana6|2021-04-17|Has expired: Upstream end of life
 www/grafana5|www/grafana6|2021-04-17|Has expired: Upstream end of life
 comms/py-lirc||2021-04-17|Has expired: No longer maintained and not compatible with Python 3
 x11-toolkits/qt5-gtkplatform||2021-04-17|Has expired: Archived upstream
+textproc/py-markdown3|textproc/py-markdown|2021-04-20|markdown3 confilicts with too many ports
+security/fbopenssl||2021-04-20|Unmaintained, abandoned, does not build with recent OS versions
+devel/gearmand-devel||2021-04-20|Unmaintained, abandoned, has not built for over half a year
+textproc/bsdsort||2021-04-21|Old version of sort(1)
+www/py-django-mezzanine||2021-04-23|Depends on expired www/py-django111, not compatible with newer versions of Django
+devel/py-enum34||2021-04-23|No longer needed with python 3
+multimedia/gmimms||2021-04-23|Unmaintained, uses EOL'd Python 2.7
+multimedia/mimms||2021-04-23|Unmaintained, uses EOL'd Python 2.7
+net/samba411|net/samba412|2021-04-24|Has expired: Security Support ends on 03 Dec 2020
+net-im/cordless||2021-04-24|Has expired: Unmaintained and dead upstream, uses the old Discord API which notably has got users banned
+news/plor||2021-04-24|Has expired: listed as "Alpha-release" but last update in 2001; unmaintained
+security/certificate-transparency||2021-04-24|Has expired: Broken for more than 6 months
+misc/soapysdr-rtlsdr|comms/soapysdr-rtlsdr|2021-04-28|Move port to a proper category
+net/libjson-rpc-cpp||2021-04-28|Port has been broken since October 2020
+www/py-django111|www/py-django22|2021-04-30|Has expired: Django 1.11 is End-of-Life since April 2020. Switch to Django 2.2+ as soon as possible
+archivers/par2cmdline-tbb|archivers/par2cmdline|2021-04-30|Has expired: Unmaintained upstream, does not build with oneTbb. Use archivers/par2cmdline instead
+x11-toolkits/p5-Gnome2-VFS||2021-05-01|Has expired: Deprecated by the Gtk-Perl project. No more security patches and bug fixes
+x11-toolkits/p5-Gnome2||2021-05-01|Has expired: Deprecated by the Gtk-Perl project. No more security patches and bug fixes
+deskutils/shutter||2021-05-01|Has expired: Upstream gone, depends on expired x11-toolkits/p5-Gnome2-VFS
+misc/gcstar||2021-05-01|Has expired: Depends on expired x11-toolkits/p5-Gnome2-VFS
+x11/gnome-sharp20||2021-05-01|Dead upstream, no consumers left in the ports tree
+x11-toolkits/libgnomeui||2021-05-01|Dead upstream, no consumers left in the ports tree
+x11-toolkits/p5-Gnome2-Canvas||2021-05-01|Has expired: Deprecated by the Gtk-Perl project. No more security patches and bug fixes
+x11-toolkits/p5-Gnome2-Wnck||2021-05-01|Has expired: Deprecated by the Gtk-Perl project. No more security patches and bug fixes
+devel/p5-Gnome2-GConf||2021-05-01|Has expired: Deprecated by the Gtk-Perl project. No more security patches and bug fixes
+comms/kb||2021-05-01|Abandonware, upstream has disappeared, depends on libgnome
+games/monster-masher||2021-05-01|Abandonware, depends on libgnome
+x11/libgnome||2021-05-01|Dead upstream, no consumers left in the ports tree
+devel/gnome-vfs||2021-05-01|Dead upstream, no consumers left in the ports tree
+devel/libbonobo||2021-05-01|Dead upstream, no consumers left in the ports tree
+x11-toolkits/p5-Gtk2-Unique||2021-05-01|Dead upstream, no consumers left in the ports tree
+sysutils/policykit-gnome||2021-05-01|Gnome2 component, no consumers left in the ports tree
+sysutils/policykit|sysutils/polkit|2021-05-01|Gnome2 component, no consumers left in the ports tree
+databases/rubygem-gitlab-pg_query|databases/rubygem-pg_query|2021-05-03|Obsolete, please use databases/rubygem-pg_query
+devel/rubygem-licensee8|devel/rubygem-licensee|2021-05-03|Obsolete, please use devel/rubygem-licensee
+devel/rubygem-ruby-magic-static|devel/rubygem-ruby-magic|2021-05-03|Obsolete, please use devel/rubygem-ruby-magic
+devel/gecode|math/gecode|2021-05-04|Move to a proper category
+net-im/libqmatrixclient|net-im/libquotient|2021-05-08|Has expired: Use libQuotient (devel/libquotient) instead
+devel/electron11|devel/electron12|2021-05-12|VSCode update requires a newer major version
+dns/opendd||2021-05-15|Has expired: Abandonware
+www/py-django30|www/py-django31|2021-05-16|Has expired: Has expired: Extended support has expired on April 6th, 2021. Use www/py-django31 or www/py-django32 instead
+net-mgmt/unifi-devel|net-mgmt/unifi6|2021-05-16|Has expired: Use net-mgmt/unifi6 instead
+print/rubygem-pdf-core07|print/rubygem-pdf-core|2021-05-16|Obsoleted. Use print/rubygem-pdf-core instead
+security/bitwarden_rs|security/vaultwarden|2021-05-16|Project was renamed
+sysutils/kdiskmark|benchmarks/kdiskmark|2021-05-18|Moved to a more appropriate category
+sysutils/edk2@xen|sysutils/edk2@xen_x64|2021-05-18|Add Xen arch to the flavor name to be futur-proof
+devel/py-jupyter_core|devel/py-jupyter-core|2021-05-18|Rename to match upstream naming
+devel/sope4|devel/sope|2021-05-19|Obsolete, please use devel/sope
+sysutils/ansible27|sysutils/ansible|2021-05-21|Has expired: Upstream support ended; consider upgrading to sysutils/ansible
+sysutils/ansible28|sysutils/ansible|2021-05-21|Has expired: Upstream support ended; consider upgrading to sysutils/ansible
+devel/omnisharp-server||2021-05-23|Dead upstream, no depends in ports tree

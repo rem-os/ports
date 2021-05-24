@@ -16,7 +16,7 @@ CONFLICTS_INSTALL=	qemu-user-static-[0-9]*
 
 USES=		bison compiler:c11 gmake perl5 pkgconfig python:build
 USE_GITHUB=	yes
-GH_TUPLE=	seanbruno:qemu-bsd-user:74de8c0708	\
+GH_TUPLE=	qemu-bsd-user:qemu-bsd-user:6ffee39fe2e49944	\
 		qemu:keycodemapdb:10739aa:keycodemapdb/ui/keycodemapdb
 HAS_CONFIGURE=	yes
 USE_PERL5=	build

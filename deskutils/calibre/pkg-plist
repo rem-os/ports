@@ -145,7 +145,6 @@ lib/calibre/calibre/devices/mtp/unix/sysfs.py
 lib/calibre/calibre/devices/mtp/unix/upstream/update.py
 lib/calibre/calibre/devices/mtp/windows/__init__.py
 lib/calibre/calibre/devices/mtp/windows/driver.py
-lib/calibre/calibre/devices/mtp/windows/remote.py
 lib/calibre/calibre/devices/nokia/__init__.py
 lib/calibre/calibre/devices/nokia/driver.py
 lib/calibre/calibre/devices/nook/__init__.py
@@ -366,7 +365,6 @@ lib/calibre/calibre/ebooks/metadata/sources/google.py
 lib/calibre/calibre/ebooks/metadata/sources/google_images.py
 lib/calibre/calibre/ebooks/metadata/sources/identify.py
 lib/calibre/calibre/ebooks/metadata/sources/openlibrary.py
-lib/calibre/calibre/ebooks/metadata/sources/overdrive.py
 lib/calibre/calibre/ebooks/metadata/sources/prefs.py
 lib/calibre/calibre/ebooks/metadata/sources/search_engines.py
 lib/calibre/calibre/ebooks/metadata/sources/test.py

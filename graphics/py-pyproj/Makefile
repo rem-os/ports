@@ -1,9 +1,8 @@
 # Created by: TAOKA Fumiyoshi
 
 PORTNAME=	pyproj
-PORTVERSION=	3.0.0
-DISTVERSIONSUFFIX=	.post1
-CATEGORIES=	graphics python geography
+PORTVERSION=	3.0.1
+CATEGORIES=	graphics geography python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 

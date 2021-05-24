@@ -78,7 +78,6 @@
     SUBDIR += br-aspell
     SUBDIR += bsddiff
     SUBDIR += bsdgrep
-    SUBDIR += bsdsort
     SUBDIR += btparse
     SUBDIR += c2html
     SUBDIR += c2man
@@ -104,6 +103,7 @@
     SUBDIR += confetti
     SUBDIR += confget
     SUBDIR += consul-template
+    SUBDIR += cpp-peglib
     SUBDIR += crex
     SUBDIR += crimson
     SUBDIR += crunch
@@ -230,6 +230,7 @@
     SUBDIR += gladtex
     SUBDIR += gmetadom
     SUBDIR += gnugrep
+    SUBDIR += go-md2man
     SUBDIR += goldendict
     SUBDIR += google-ctemplate
     SUBDIR += google-translate-cli
@@ -629,6 +630,7 @@
     SUBDIR += p5-PDF-API2-Simple
     SUBDIR += p5-PDF-API2-XS
     SUBDIR += p5-PDF-API3
+    SUBDIR += p5-PDF-Builder
     SUBDIR += p5-PDF-Create
     SUBDIR += p5-PDF-FromHTML
     SUBDIR += p5-PDF-Reuse
@@ -934,6 +936,7 @@
     SUBDIR += p5-Text-Table-Paragraph
     SUBDIR += p5-Text-Table-Sprintf
     SUBDIR += p5-Text-Table-TSV
+    SUBDIR += p5-Text-Table-TickitWidget
     SUBDIR += p5-Text-Table-Tiny
     SUBDIR += p5-Text-Table-TinyBorderStyle
     SUBDIR += p5-Text-Table-TinyColor
@@ -1301,6 +1304,7 @@
     SUBDIR += py-j2cli
     SUBDIR += py-jc
     SUBDIR += py-jinja2-cli
+    SUBDIR += py-jq
     SUBDIR += py-jsonslicer
     SUBDIR += py-jsx-lexer
     SUBDIR += py-jtextfsm
@@ -1381,6 +1385,8 @@
     SUBDIR += py-python-docx
     SUBDIR += py-python-gettext
     SUBDIR += py-python-language-server
+    SUBDIR += py-python-lsp-jsonrpc
+    SUBDIR += py-python-lsp-server
     SUBDIR += py-python-slugify
     SUBDIR += py-python-xmp-toolkit
     SUBDIR += py-pytidylib
@@ -1398,6 +1404,7 @@
     SUBDIR += py-rich
     SUBDIR += py-rnc2rng
     SUBDIR += py-rss2gen
+    SUBDIR += py-rst2ansi
     SUBDIR += py-rst2html5
     SUBDIR += py-scour
     SUBDIR += py-simplebayes
@@ -1538,6 +1545,7 @@
     SUBDIR += rubygem-asciidoctor-plantuml
     SUBDIR += rubygem-asciidoctor-plantuml0010
     SUBDIR += rubygem-autoprefixer-rails
+    SUBDIR += rubygem-autoprefixer-rails1020
     SUBDIR += rubygem-babel-source
     SUBDIR += rubygem-babel-transpiler
     SUBDIR += rubygem-babosa
@@ -1601,6 +1609,7 @@
     SUBDIR += rubygem-hikidoc
     SUBDIR += rubygem-html-pipeline
     SUBDIR += rubygem-html-pipeline27
+    SUBDIR += rubygem-html-proofer
     SUBDIR += rubygem-html2text
     SUBDIR += rubygem-htmlentities
     SUBDIR += rubygem-ini
@@ -1646,6 +1655,7 @@
     SUBDIR += rubygem-opml
     SUBDIR += rubygem-org-ruby
     SUBDIR += rubygem-ox
+    SUBDIR += rubygem-parse-cron
     SUBDIR += rubygem-parslet
     SUBDIR += rubygem-parslet1
     SUBDIR += rubygem-phone
@@ -1787,6 +1797,7 @@
     SUBDIR += sl-hyphen
     SUBDIR += sl-mythes
     SUBDIR += slides
+    SUBDIR += slowcat
     SUBDIR += smi
     SUBDIR += smu
     SUBDIR += so-hunspell
@@ -1905,6 +1916,7 @@
     SUBDIR += xhtml1-xsd
     SUBDIR += xincluder
     SUBDIR += xlhtml
+    SUBDIR += xlnt
     SUBDIR += xlreader
     SUBDIR += xml-commons
     SUBDIR += xml-format

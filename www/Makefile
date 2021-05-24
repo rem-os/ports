@@ -285,6 +285,7 @@
     SUBDIR += lagrange
     SUBDIR += larbin
     SUBDIR += libapreq2
+    SUBDIR += libdatachannel
     SUBDIR += libdom
     SUBDIR += libecap
     SUBDIR += libepc
@@ -411,6 +412,7 @@
     SUBDIR += mongrel2
     SUBDIR += monolith
     SUBDIR += moodle310
+    SUBDIR += moodle311
     SUBDIR += moodle39
     SUBDIR += morty
     SUBDIR += mozplugger
@@ -474,6 +476,7 @@
     SUBDIR += ot-recorder
     SUBDIR += otrs
     SUBDIR += otter-browser
+    SUBDIR += owncast
     SUBDIR += owncloud
     SUBDIR += p5-AMF-Perl
     SUBDIR += p5-Acme-Monta
@@ -1105,6 +1108,7 @@
     SUBDIR += p5-RT-Extension-LDAPImport
     SUBDIR += p5-RT-Extension-MandatoryOnTransition
     SUBDIR += p5-RT-Extension-RepeatTicket
+    SUBDIR += p5-RT-Extension-RepeatTicket2
     SUBDIR += p5-RTx-Calendar
     SUBDIR += p5-Reaction
     SUBDIR += p5-Reddit
@@ -1468,6 +1472,7 @@
     SUBDIR += py-django-braces
     SUBDIR += py-django-bulk-update
     SUBDIR += py-django-cacheops
+    SUBDIR += py-django-ckeditor-5
     SUBDIR += py-django-classy-tags
     SUBDIR += py-django-cms
     SUBDIR += py-django-common-helpers
@@ -1505,7 +1510,6 @@
     SUBDIR += py-django-libsass
     SUBDIR += py-django-markdownx
     SUBDIR += py-django-markwhat
-    SUBDIR += py-django-mezzanine
     SUBDIR += py-django-mezzanine-filebrowser
     SUBDIR += py-django-mezzanine-grappelli
     SUBDIR += py-django-model-utils
@@ -1513,6 +1517,7 @@
     SUBDIR += py-django-modern-rpc
     SUBDIR += py-django-mptt
     SUBDIR += py-django-netfields
+    SUBDIR += py-django-object-actions
     SUBDIR += py-django-otp
     SUBDIR += py-django-otp-yubikey
     SUBDIR += py-django-pglocks
@@ -1530,9 +1535,11 @@
     SUBDIR += py-django-registration-redux
     SUBDIR += py-django-rest-swagger
     SUBDIR += py-django-reversion
+    SUBDIR += py-django-reversion-compare
     SUBDIR += py-django-sekizai
     SUBDIR += py-django-simple-captcha
     SUBDIR += py-django-simple-history
+    SUBDIR += py-django-smart-selects
     SUBDIR += py-django-solo
     SUBDIR += py-django-sortedm2m
     SUBDIR += py-django-star-ratings
@@ -1552,9 +1559,7 @@
     SUBDIR += py-django-voting
     SUBDIR += py-django-webpack-loader
     SUBDIR += py-django-widget-tweaks
-    SUBDIR += py-django111
     SUBDIR += py-django22
-    SUBDIR += py-django30
     SUBDIR += py-django31
     SUBDIR += py-django32
     SUBDIR += py-django_compressor
@@ -1570,6 +1575,7 @@
     SUBDIR += py-enmerkar
     SUBDIR += py-fake-useragent
     SUBDIR += py-falcon
+    SUBDIR += py-fastapi
     SUBDIR += py-feedgenerator
     SUBDIR += py-flask
     SUBDIR += py-flask-admin
@@ -1769,6 +1775,7 @@
     SUBDIR += py-wsaccel
     SUBDIR += py-wsgidav
     SUBDIR += py-yarl
+    SUBDIR += pydio-cells
     SUBDIR += qdecoder
     SUBDIR += qhttpengine
     SUBDIR += qt5-webchannel
@@ -1861,6 +1868,7 @@
     SUBDIR += rubygem-eventmachine_httpserver
     SUBDIR += rubygem-faraday
     SUBDIR += rubygem-faraday-net_http
+    SUBDIR += rubygem-faraday-net_http_persistent
     SUBDIR += rubygem-faraday0
     SUBDIR += rubygem-faraday_middleware
     SUBDIR += rubygem-faraday_middleware0
@@ -1905,6 +1913,7 @@
     SUBDIR += rubygem-http-cookie
     SUBDIR += rubygem-http-form_data
     SUBDIR += rubygem-http3
+    SUBDIR += rubygem-http4
     SUBDIR += rubygem-http_router
     SUBDIR += rubygem-httparty
     SUBDIR += rubygem-httpclient
@@ -1952,6 +1961,7 @@
     SUBDIR += rubygem-less
     SUBDIR += rubygem-lighthouse-api
     SUBDIR += rubygem-link_header
+    SUBDIR += rubygem-llhttp-ffi
     SUBDIR += rubygem-lograge
     SUBDIR += rubygem-lograge-rails5
     SUBDIR += rubygem-lograge-rails52
@@ -2151,6 +2161,7 @@
     SUBDIR += squidpurge
     SUBDIR += squidview
     SUBDIR += srg
+    SUBDIR += srt
     SUBDIR += stagit
     SUBDIR += subsonic-standalone
     SUBDIR += suphp
@@ -2287,6 +2298,7 @@
     SUBDIR += wordpress
     SUBDIR += wpebackend-fdo
     SUBDIR += wsdlpull
+    SUBDIR += wslay
     SUBDIR += wsmake
     SUBDIR += wt
     SUBDIR += wuzz

@@ -1,8 +1,7 @@
 # Created by: Michael Beer <beerml@sigma6audio.de>
 
 PORTNAME=	ardour6
-PORTVERSION=	6.5.0
-PORTREVISION=	1
+PORTVERSION=	6.6.0
 CATEGORIES=	audio
 MASTER_SITES=	https://github.com/beerml/ardour_releases/raw/master/
 # The original master side points to the latest release only:
@@ -44,7 +43,7 @@ LIB_DEPENDS=	libserd-0.so:devel/serd \
 		libwebsockets.so:net/libwebsockets
 
 USES=		compiler:c++11-lang desktop-file-utils gettext gnome \
-		libarchive pkgconfig python:3.7,build readline:port tar:bzip2 \
+		libarchive pkgconfig python:3.7,build readline tar:bzip2 \
 		waf xorg
 USE_CXXSTD=	c++11
 USE_XORG=	x11

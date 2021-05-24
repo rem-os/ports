@@ -50,6 +50,7 @@
     SUBDIR += dmenu-wayland
     SUBDIR += docker-tray
     SUBDIR += dsbautostart
+    SUBDIR += dsbxinput
     SUBDIR += dxpc
     SUBDIR += dzen2
     SUBDIR += eaglemode
@@ -132,6 +133,7 @@
     SUBDIR += kf5-kwayland
     SUBDIR += kf5-kwindowsystem
     SUBDIR += kf5-plasma-framework
+    SUBDIR += kitty
     SUBDIR += konsole
     SUBDIR += lavalauncher
     SUBDIR += lemonbar
@@ -165,7 +167,6 @@
     SUBDIR += libfm
     SUBDIR += libfm-extra
     SUBDIR += libfm-qt
-    SUBDIR += libgnome
     SUBDIR += libgnomekbd
     SUBDIR += libinput
     SUBDIR += libmatekbd
@@ -295,6 +296,7 @@
     SUBDIR += roxterm
     SUBDIR += rsibreak
     SUBDIR += rubygem-gnome
+    SUBDIR += runner
     SUBDIR += rxvt-unicode
     SUBDIR += sakura
     SUBDIR += sbxkb
@@ -307,6 +309,7 @@
     SUBDIR += setlayout
     SUBDIR += setxkbmap
     SUBDIR += showkeys
+    SUBDIR += showmethekey
     SUBDIR += simdock
     SUBDIR += simplestroke
     SUBDIR += slick-greeter
@@ -317,6 +320,7 @@
     SUBDIR += smproxy
     SUBDIR += sprop
     SUBDIR += squeekboard
+    SUBDIR += srandrd
     SUBDIR += sselp
     SUBDIR += stalonetray
     SUBDIR += startup-notification

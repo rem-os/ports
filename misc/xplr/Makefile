@@ -1,6 +1,6 @@
 PORTNAME=	xplr
 DISTVERSIONPREFIX=	v
-DISTVERSION=	0.4.4
+DISTVERSION=	0.9.1
 CATEGORIES=	misc
 
 MAINTAINER=	lcook@FreeBSD.org
@@ -29,7 +29,6 @@ CARGO_CRATES=	anyhow-1.0.40 \
 		byteorder-1.4.3 \
 		cassowary-0.3.0 \
 		cast-0.2.3 \
-		cfg-if-0.1.10 \
 		cfg-if-1.0.0 \
 		chrono-0.4.19 \
 		clap-2.33.3 \
@@ -50,27 +49,20 @@ CARGO_CRATES=	anyhow-1.0.40 \
 		dtoa-0.4.8 \
 		either-1.6.1 \
 		fake-simd-0.1.2 \
-		filetime-0.2.14 \
-		fsevent-0.4.0 \
-		fsevent-sys-2.0.1 \
-		fuchsia-zircon-0.3.3 \
-		fuchsia-zircon-sys-0.3.3 \
 		generic-array-0.12.4 \
 		getrandom-0.1.16 \
 		half-1.7.1 \
 		handlebars-3.5.4 \
+		hashbrown-0.9.1 \
 		hermit-abi-0.1.18 \
-		inotify-0.7.1 \
-		inotify-sys-0.1.5 \
+		humansize-1.1.0 \
+		indexmap-1.6.2 \
 		instant-0.1.9 \
-		iovec-0.1.4 \
 		itertools-0.9.0 \
 		itertools-0.10.0 \
 		itoa-0.4.7 \
 		js-sys-0.3.50 \
-		kernel32-sys-0.2.2 \
 		lazy_static-1.4.0 \
-		lazycell-1.3.0 \
 		libc-0.2.92 \
 		linked-hash-map-0.5.4 \
 		lock_api-0.4.2 \
@@ -80,13 +72,9 @@ CARGO_CRATES=	anyhow-1.0.40 \
 		memoffset-0.6.3 \
 		mime-0.3.16 \
 		mime_guess-2.0.3 \
-		mio-0.6.23 \
 		mio-0.7.11 \
-		mio-extras-2.0.6 \
-		miow-0.2.2 \
 		miow-0.3.7 \
-		net2-0.2.37 \
-		notify-4.0.15 \
+		natord-1.0.9 \
 		ntapi-0.3.6 \
 		num-integer-0.1.44 \
 		num-traits-0.2.14 \
@@ -130,7 +118,6 @@ CARGO_CRATES=	anyhow-1.0.40 \
 		sha-1-0.8.2 \
 		signal-hook-0.1.17 \
 		signal-hook-registry-1.3.0 \
-		slab-0.4.2 \
 		smallvec-1.6.1 \
 		syn-1.0.68 \
 		termion-1.5.6 \
@@ -154,33 +141,47 @@ CARGO_CRATES=	anyhow-1.0.40 \
 		wasm-bindgen-macro-support-0.2.73 \
 		wasm-bindgen-shared-0.2.73 \
 		web-sys-0.3.50 \
-		winapi-0.2.8 \
 		winapi-0.3.9 \
-		winapi-build-0.1.1 \
 		winapi-i686-pc-windows-gnu-0.4.0 \
 		winapi-util-0.1.5 \
 		winapi-x86_64-pc-windows-gnu-0.4.0 \
-		ws2_32-sys-0.2.1 \
 		yaml-rust-0.4.5
 
-PLIST_FILES=	bin/${PORTNAME} \
-		share/applications/${PORTNAME}.desktop
 PORTDOCS=	CODE_OF_CONDUCT.md README.md RELEASE.md
 _EXAMPLES=	${WRKSRC}/src/config.yml
 PORTEXAMPLES=	${_EXAMPLES:T}
 
 OPTIONS_DEFINE=	DOCS EXAMPLES
 
+_ASSETS=	${WRKSRC}/assets
+_ICONS=		${STAGEDIR}${PREFIX}/share/icons/hicolor
+
 post-install:
 	${STRIP_CMD} ${STAGEDIR}${PREFIX}/bin/${PORTNAME}
-	${INSTALL_DATA} ${WRKSRC}/${PORTNAME}.desktop ${STAGEDIR}${PREFIX}/share/applications/${PORTNAME}.desktop
+
+	${INSTALL_DATA} ${_ASSETS}/desktop/${PORTNAME}.desktop \
+		${STAGEDIR}${PREFIX}/share/applications/${PORTNAME}.desktop
+
+	@${MKDIR} ${_ICONS}/scalable/apps
+	${INSTALL_DATA} ${_ASSETS}/icon/${PORTNAME}.svg \
+		${_ICONS}/scalable/apps
+.for res in 16 32 64 128
+	@${MKDIR} ${_ICONS}/${res}x${res}/apps
+.for icon in ico png
+	${INSTALL_DATA} ${_ASSETS}/icon/${PORTNAME}${res}.${icon} \
+		${_ICONS}/${res}x${res}/apps/${PORTNAME}.${icon}
+.endfor
+.endfor
 
 post-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
-	${INSTALL_DATA} ${PORTDOCS:S|^|${WRKSRC}/|} ${STAGEDIR}${DOCSDIR}
+	${INSTALL_DATA} ${PORTDOCS:S|^|${WRKSRC}/|} \
+		${STAGEDIR}${DOCSDIR}
 
 post-install-EXAMPLES-on:
 	@${MKDIR} ${STAGEDIR}${EXAMPLESDIR}
-	cd ${WRKSRC} && ${INSTALL_DATA} ${_EXAMPLES} ${STAGEDIR}${EXAMPLESDIR}
+	cd ${WRKSRC} && \
+		${INSTALL_DATA} ${_EXAMPLES} \
+		${STAGEDIR}${EXAMPLESDIR}
 
 .include <bsd.port.mk>
