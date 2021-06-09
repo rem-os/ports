@@ -235,6 +235,7 @@
     SUBDIR += mxascii
     SUBDIR += mxico
     SUBDIR += nezd
+    SUBDIR += nfy
     SUBDIR += numlockx
     SUBDIR += nvidia-driver
     SUBDIR += nvidia-driver-304
@@ -255,7 +256,6 @@
     SUBDIR += p5-XTerm-Conf
     SUBDIR += pcdm
     SUBDIR += perwindowlayoutd
-    SUBDIR += phosh
     SUBDIR += pipeglade
     SUBDIR += pixman
     SUBDIR += plank
@@ -274,6 +274,7 @@
     SUBDIR += polybar
     SUBDIR += printscreen
     SUBDIR += py-caffeine-ng
+    SUBDIR += py-i3-quickterm
     SUBDIR += py-i3ipc
     SUBDIR += py-pyscreenshot
     SUBDIR += py-python-xapp
