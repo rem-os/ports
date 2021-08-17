@@ -175,6 +175,7 @@
     SUBDIR += btor2tools
     SUBDIR += cadabra2
     SUBDIR += cadical
+    SUBDIR += cado-nfs
     SUBDIR += calc
     SUBDIR += calcoo
     SUBDIR += cantor
@@ -212,6 +213,7 @@
     SUBDIR += coinmp
     SUBDIR += coinmumps
     SUBDIR += coinutils
+    SUBDIR += colpack
     SUBDIR += combblas
     SUBDIR += conauto
     SUBDIR += concorde
@@ -313,6 +315,7 @@
     SUBDIR += ggobi
     SUBDIR += gh-bc
     SUBDIR += giacxcas
+    SUBDIR += gismo
     SUBDIR += givaro
     SUBDIR += gkmap
     SUBDIR += glgraph
@@ -429,6 +432,7 @@
     SUBDIR += maxima
     SUBDIR += mbasecalc
     SUBDIR += mcsim
+    SUBDIR += mdal
     SUBDIR += metis
     SUBDIR += mfem
     SUBDIR += mingw32-libgmp
@@ -731,6 +735,7 @@
     SUBDIR += pari_galpol
     SUBDIR += pari_nftables
     SUBDIR += pari_seadata
+    SUBDIR += paritwine
     SUBDIR += parmetis
     SUBDIR += parmgridgen
     SUBDIR += pdal
@@ -803,6 +808,7 @@
     SUBDIR += py-fastdtw
     SUBDIR += py-flax
     SUBDIR += py-fpylll
+    SUBDIR += py-fvcore
     SUBDIR += py-gau2grid
     SUBDIR += py-gimmik
     SUBDIR += py-gmpy
@@ -871,6 +877,7 @@
     SUBDIR += py-pynndescent
     SUBDIR += py-pyodeint
     SUBDIR += py-pyodesys
+    SUBDIR += py-pyreadr
     SUBDIR += py-pysmt
     SUBDIR += py-pystan
     SUBDIR += py-pysym
@@ -878,6 +885,7 @@
     SUBDIR += py-python-igraph
     SUBDIR += py-python-louvain
     SUBDIR += py-python-picard
+    SUBDIR += py-pytorchvideo
     SUBDIR += py-pyvtk
     SUBDIR += py-qdldl
     SUBDIR += py-quadprog
@@ -908,6 +916,7 @@
     SUBDIR += py-theano
     SUBDIR += py-triangle
     SUBDIR += py-uncertainties
+    SUBDIR += py-unyt
     SUBDIR += py-vincenty
     SUBDIR += py-yt
     SUBDIR += py-z3-solver

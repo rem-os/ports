@@ -1,3 +1,3 @@
-TIMESTAMP = 1623520752
-SHA256 (KDE/release-service/21.04.2/audiocd-kio-21.04.2.tar.xz) = eba03b001ff75f1231a3bfb7ea4fa67b4ea976bae7b64859e23ebf101f6d6808
-SIZE (KDE/release-service/21.04.2/audiocd-kio-21.04.2.tar.xz) = 517752
+TIMESTAMP = 1628244081
+SHA256 (KDE/release-service/21.08.0/audiocd-kio-21.08.0.tar.xz) = 3aa5082ff1d20cdb535deb5006f87c855d2cce0618fe5f5e41e7eaf0c50cd78b
+SIZE (KDE/release-service/21.08.0/audiocd-kio-21.08.0.tar.xz) = 522936

@@ -69,11 +69,11 @@
     SUBDIR += libXt
     SUBDIR += libadwaita
     SUBDIR += libdazzle
+    SUBDIR += libdecor
     SUBDIR += libgdiplus
     SUBDIR += libhandy
     SUBDIR += libhandy0
     SUBDIR += libsexy
-    SUBDIR += libsexymm
     SUBDIR += libunique3
     SUBDIR += libwnck
     SUBDIR += libwnck3
@@ -183,10 +183,13 @@
     SUBDIR += redkite
     SUBDIR += rep-gtk2
     SUBDIR += rubygem-gdk3
+    SUBDIR += rubygem-gdk4
     SUBDIR += rubygem-gtk2
     SUBDIR += rubygem-gtk3
+    SUBDIR += rubygem-gtk4
     SUBDIR += rubygem-gtksourceview2
     SUBDIR += rubygem-gtksourceview3
+    SUBDIR += rubygem-gtksourceview4
     SUBDIR += rubygem-pango
     SUBDIR += rubygem-poppler
     SUBDIR += rubygem-tk

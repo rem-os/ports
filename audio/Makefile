@@ -17,6 +17,7 @@
     SUBDIR += alo-lv2
     SUBDIR += alsa-lib
     SUBDIR += alsa-plugins
+    SUBDIR += alsa-seq-server
     SUBDIR += alsa-sndio
     SUBDIR += alsa-utils
     SUBDIR += alure
@@ -131,6 +132,7 @@
     SUBDIR += easytag
     SUBDIR += eawpats
     SUBDIR += eawplus
+    SUBDIR += ebumeter
     SUBDIR += ecasound
     SUBDIR += elisa
     SUBDIR += emms
@@ -327,7 +329,9 @@
     SUBDIR += jalv
     SUBDIR += jalv-select
     SUBDIR += jamulus
+    SUBDIR += jconvolver
     SUBDIR += jid3lib
+    SUBDIR += jmatconvol
     SUBDIR += juk
     SUBDIR += juke
     SUBDIR += julius
@@ -343,6 +347,7 @@
     SUBDIR += lame
     SUBDIR += lash
     SUBDIR += lenticular-lv2
+    SUBDIR += lewton
     SUBDIR += liba52
     SUBDIR += libaacplus
     SUBDIR += libadplug
@@ -377,6 +382,7 @@
     SUBDIR += libinstpatch
     SUBDIR += libkcddb
     SUBDIR += libkcompactdisc
+    SUBDIR += libkeyfinder
     SUBDIR += liblastfm-qt5
     SUBDIR += liblo
     SUBDIR += liblscp
@@ -478,6 +484,7 @@
     SUBDIR += mixer.app
     SUBDIR += mixertui
     SUBDIR += mixxx
+    SUBDIR += mixxx22
     SUBDIR += mkcue
     SUBDIR += moc
     SUBDIR += modplug-tools
@@ -622,6 +629,7 @@
     SUBDIR += poly-lv2
     SUBDIR += polyphone
     SUBDIR += portaudio
+    SUBDIR += portmidi
     SUBDIR += praat
     SUBDIR += pragha
     SUBDIR += prelude-lv2
@@ -663,6 +671,8 @@
     SUBDIR += py-tagpy
     SUBDIR += py-wavio
     SUBDIR += py-webrtcvad
+    SUBDIR += py-zita-audiotools
+    SUBDIR += py-zita-jacktools
     SUBDIR += qaudiosonar
     SUBDIR += qjackctl
     SUBDIR += qmidiarp
@@ -684,7 +694,6 @@
     SUBDIR += rhvoice-dictionary
     SUBDIR += rhythmbox
     SUBDIR += rioutil
-    SUBDIR += ripit
     SUBDIR += ripperx
     SUBDIR += rkr-lv2
     SUBDIR += rnnoise
@@ -869,9 +878,17 @@
     SUBDIR += ympd
     SUBDIR += yoshimi
     SUBDIR += zam-plugins-lv2
+    SUBDIR += zita-alsa-pcmi
+    SUBDIR += zita-at1
+    SUBDIR += zita-bls1
     SUBDIR += zita-convolver
+    SUBDIR += zita-dpl1
+    SUBDIR += zita-jclient
+    SUBDIR += zita-mu1
     SUBDIR += zita-njbridge
     SUBDIR += zita-resampler
+    SUBDIR += zita-rev1
+    SUBDIR += zplugins-lv2
     SUBDIR += zrythm
     SUBDIR += zynaddsubfx
 

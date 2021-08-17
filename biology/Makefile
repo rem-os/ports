@@ -13,6 +13,7 @@
     SUBDIR += biococoa
     SUBDIR += biolibc
     SUBDIR += bioparser
+    SUBDIR += biosig
     SUBDIR += biosoup
     SUBDIR += biostar-tools
     SUBDIR += bolt-lmm
@@ -32,6 +33,7 @@
     SUBDIR += dsr-pdb
     SUBDIR += edlib
     SUBDIR += emboss
+    SUBDIR += erminej
     SUBDIR += exonerate
     SUBDIR += fasta
     SUBDIR += fasta3
@@ -143,6 +145,7 @@
     SUBDIR += py-loompy
     SUBDIR += py-macs2
     SUBDIR += py-multiqc
+    SUBDIR += py-ont-fast5-api
     SUBDIR += py-orange3-bioinformatics
     SUBDIR += py-orange3-single-cell
     SUBDIR += py-pandas-charm
@@ -172,6 +175,7 @@
     SUBDIR += seqio
     SUBDIR += seqkit
     SUBDIR += seqtk
+    SUBDIR += sigviewer
     SUBDIR += sim4
     SUBDIR += slclust
     SUBDIR += smithwaterman

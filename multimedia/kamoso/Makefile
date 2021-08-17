@@ -1,6 +1,5 @@
 PORTNAME=	kamoso
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
-PORTREVISION=	1
 CATEGORIES=	multimedia kde kde-applications
 
 MAINTAINER=	kde@FreeBSD.org
@@ -14,8 +13,9 @@ USE_GL=		gl
 USE_GNOME=	glib20
 USE_GSTREAMER1=	yes
 USE_KDE=	auth bookmarks codecs completion config configwidgets \
-		coreaddons ecm i18n itemviews jobwidgets kio kirigami2 \
-		notifications purpose service solid widgetsaddons xmlgui
+		coreaddons i18n itemviews jobwidgets kio kirigami2 \
+		notifications purpose service solid widgetsaddons windowsystem xmlgui \
+		ecm_build
 USE_QT=		concurrent core dbus declarative graphicaleffects gui network \
 		quickcontrols widgets xml \
 		buildtools_build qmake_build

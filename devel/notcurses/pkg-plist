@@ -38,6 +38,7 @@ include/ncpp/internal/Helpers.hh
 include/ncpp/ncpp.hh
 include/notcurses/direct.h
 include/notcurses/nckeys.h
+include/notcurses/ncport.h
 include/notcurses/ncseqs.h
 include/notcurses/notcurses.h
 include/notcurses/version.h
@@ -172,6 +173,7 @@ libdata/pkgconfig/notcurses.pc
 %%DATADIR%%/megaman2.bmp
 %%DATADIR%%/natasha-blur.png
 %%DATADIR%%/normal.png
+%%DATADIR%%/notcurses.png
 %%DATADIR%%/notcursesIII.mkv
 %%DATADIR%%/onedot.png
 %%DATADIR%%/samoa.avi

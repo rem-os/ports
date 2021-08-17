@@ -65,6 +65,7 @@
     SUBDIR += dlib-cpp
     SUBDIR += drawxtl
     SUBDIR += dvc
+    SUBDIR += dynare
     SUBDIR += eccodes
     SUBDIR += elk
     SUBDIR += elmerfem
@@ -173,10 +174,15 @@
     SUBDIR += openbabel
     SUBDIR += openkim
     SUBDIR += openkim-models
+    SUBDIR += openmx
     SUBDIR += opensim-core
     SUBDIR += opensph
     SUBDIR += opsin
     SUBDIR += orthanc
+    SUBDIR += orthanc-dicomweb
+    SUBDIR += orthanc-mysql
+    SUBDIR += orthanc-postgresql
+    SUBDIR += orthanc-webviewer
     SUBDIR += p5-Algorithm-SVMLight
     SUBDIR += p5-Chemistry-3DBuilder
     SUBDIR += p5-Chemistry-Bond-Find
@@ -211,6 +217,7 @@
     SUBDIR += pagmo2
     SUBDIR += paje
     SUBDIR += pcmsolver
+    SUBDIR += phonopy
     SUBDIR += plumed
     SUBDIR += pnetcdf
     SUBDIR += pulseview
@@ -220,6 +227,7 @@
     SUBDIR += py-MDAnalysis
     SUBDIR += py-MDAnalysisTests
     SUBDIR += py-OpenFermion
+    SUBDIR += py-PubChemPy
     SUBDIR += py-PyFR
     SUBDIR += py-SimpleSpectral
     SUBDIR += py-abipy
@@ -231,6 +239,11 @@
     SUBDIR += py-chainer
     SUBDIR += py-chainer-chemistry
     SUBDIR += py-chempy
+    SUBDIR += py-cirq-aqt
+    SUBDIR += py-cirq-core
+    SUBDIR += py-cirq-google
+    SUBDIR += py-cirq-ionq
+    SUBDIR += py-cirq-pasqal
     SUBDIR += py-coards
     SUBDIR += py-dipy
     SUBDIR += py-dlib
@@ -244,6 +257,7 @@
     SUBDIR += py-gsd
     SUBDIR += py-h5json
     SUBDIR += py-h5py
+    SUBDIR += py-hiphive
     SUBDIR += py-inequality
     SUBDIR += py-jupyter_jsmol
     SUBDIR += py-kim-query
@@ -324,6 +338,7 @@
     SUBDIR += scidavis
     SUBDIR += segyio
     SUBDIR += shelxle
+    SUBDIR += siconos
     SUBDIR += siesta
     SUBDIR += sigrok-cli
     SUBDIR += sigrok-firmware

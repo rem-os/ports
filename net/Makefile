@@ -159,6 +159,7 @@
     SUBDIR += fpc-libenet
     SUBDIR += fpc-pcap
     SUBDIR += fping
+    SUBDIR += freebsd-telnetd
     SUBDIR += freebsd-uucp
     SUBDIR += freediameter
     SUBDIR += freeradius-client
@@ -225,6 +226,7 @@
     SUBDIR += gupnp-av
     SUBDIR += gupnp-dlna
     SUBDIR += gupnp-igd
+    SUBDIR += gupnp-tools
     SUBDIR += gupnp-ui
     SUBDIR += gutenfetch
     SUBDIR += gwhois
@@ -274,6 +276,7 @@
     SUBDIR += ip6_int
     SUBDIR += ipdecap
     SUBDIR += ipgrab
+    SUBDIR += ipinfo-cli
     SUBDIR += ipsumdump
     SUBDIR += ipsvd
     SUBDIR += ipxe
@@ -290,6 +293,7 @@
     SUBDIR += jicmp
     SUBDIR += jicmp6
     SUBDIR += jose
+    SUBDIR += jotta-cli
     SUBDIR += jrdesktop
     SUBDIR += jsch
     SUBDIR += jumpgate
@@ -328,6 +332,7 @@
     SUBDIR += kpimtextedit
     SUBDIR += krdc
     SUBDIR += krfb
+    SUBDIR += krill
     SUBDIR += ksmtp
     SUBDIR += ktnef
     SUBDIR += kube-controller-manager
@@ -541,7 +546,6 @@
     SUBDIR += openbgpd
     SUBDIR += openbgpd6
     SUBDIR += openldap24-client
-    SUBDIR += openldap24-sasl-client
     SUBDIR += openldap24-server
     SUBDIR += openmdns
     SUBDIR += openmpi
@@ -1178,6 +1182,7 @@
     SUBDIR += recvnet
     SUBDIR += redir
     SUBDIR += relayd
+    SUBDIR += remarkable-devd
     SUBDIR += remmina
     SUBDIR += remotebox
     SUBDIR += remotedesk
@@ -1185,6 +1190,7 @@
     SUBDIR += rfbproxy
     SUBDIR += rinetd
     SUBDIR += ripe-whois
+    SUBDIR += rospo
     SUBDIR += routinator
     SUBDIR += rp-pppoe
     SUBDIR += rpki-client
@@ -1259,7 +1265,6 @@
     SUBDIR += rubygem-gitaly
     SUBDIR += rubygem-gitaly-proto
     SUBDIR += rubygem-gitlab-fog-azure-rm
-    SUBDIR += rubygem-gitlab-fog-google
     SUBDIR += rubygem-gitlab-omniauth-openid-connect
     SUBDIR += rubygem-gitlab_omniauth-ldap
     SUBDIR += rubygem-google-cloud-bigquery
@@ -1542,6 +1547,7 @@
     SUBDIR += webalizer-geodb
     SUBDIR += whois
     SUBDIR += widentd
+    SUBDIR += wifibox
     SUBDIR += wireguard
     SUBDIR += wireguard-go
     SUBDIR += wireguard-kmod

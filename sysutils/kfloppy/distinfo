@@ -1,3 +1,3 @@
-TIMESTAMP = 1623521056
-SHA256 (KDE/release-service/21.04.2/kfloppy-21.04.2.tar.xz) = fcd398deaab0314295885c8db9a0ed995da6039b12c58d97620c004f07899dcd
-SIZE (KDE/release-service/21.04.2/kfloppy-21.04.2.tar.xz) = 210700
+TIMESTAMP = 1628244275
+SHA256 (KDE/release-service/21.08.0/kfloppy-21.08.0.tar.xz) = 83e3238dcb0e9db862829e0674ce0654296b8ca0e7a1e254fe9faafdecf56f0e
+SIZE (KDE/release-service/21.08.0/kfloppy-21.08.0.tar.xz) = 210900

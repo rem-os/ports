@@ -26,6 +26,7 @@
     SUBDIR += R-cran-stringi
     SUBDIR += R-cran-stringr
     SUBDIR += R-cran-utf8
+    SUBDIR += R-cran-vroom
     SUBDIR += R-cran-xml2
     SUBDIR += R-cran-xmlparsedata
     SUBDIR += R-cran-xtable
@@ -151,6 +152,7 @@
     SUBDIR += docbook2odf
     SUBDIR += docbookrx
     SUBDIR += docproj
+    SUBDIR += docproj-legacy
     SUBDIR += dom4j
     SUBDIR += domc
     SUBDIR += dsssl-docbook-modular
@@ -231,6 +233,7 @@
     SUBDIR += gmetadom
     SUBDIR += gnugrep
     SUBDIR += go-md2man
+    SUBDIR += go-yq
     SUBDIR += goldendict
     SUBDIR += google-ctemplate
     SUBDIR += google-translate-cli
@@ -1294,6 +1297,7 @@
     SUBDIR += py-googletrans
     SUBDIR += py-grako
     SUBDIR += py-guess-language
+    SUBDIR += py-hashids
     SUBDIR += py-hexdump
     SUBDIR += py-hieroglyph
     SUBDIR += py-hjson
@@ -1317,6 +1321,7 @@
     SUBDIR += py-langdetect
     SUBDIR += py-langid
     SUBDIR += py-laserhammer
+    SUBDIR += py-latexcodec
     SUBDIR += py-libxml2
     SUBDIR += py-license-expression
     SUBDIR += py-line-protocol-parser
@@ -1337,6 +1342,7 @@
     SUBDIR += py-mkdocs-nature
     SUBDIR += py-mwparserfromhell
     SUBDIR += py-myst-parser
+    SUBDIR += py-nbsphinx
     SUBDIR += py-nltk
     SUBDIR += py-normality
     SUBDIR += py-numpydoc
@@ -1367,7 +1373,15 @@
     SUBDIR += py-pyPEG2
     SUBDIR += py-pyahocorasick
     SUBDIR += py-pyaml
+    SUBDIR += py-pybtex
+    SUBDIR += py-pybtex-docutils
     SUBDIR += py-pycountry
+    SUBDIR += py-pyexcel
+    SUBDIR += py-pyexcel-ezodf
+    SUBDIR += py-pyexcel-io
+    SUBDIR += py-pyexcel-ods3
+    SUBDIR += py-pyexcel-xls
+    SUBDIR += py-pyexcel-xlsx
     SUBDIR += py-pygccxml
     SUBDIR += py-pygments
     SUBDIR += py-pygments-25
@@ -1389,7 +1403,6 @@
     SUBDIR += py-python-docs-theme
     SUBDIR += py-python-docx
     SUBDIR += py-python-gettext
-    SUBDIR += py-python-language-server
     SUBDIR += py-python-lsp-jsonrpc
     SUBDIR += py-python-lsp-server
     SUBDIR += py-python-slugify
@@ -1405,6 +1418,7 @@
     SUBDIR += py-recommonmark
     SUBDIR += py-regex
     SUBDIR += py-reno
+    SUBDIR += py-restructuredtext-lint
     SUBDIR += py-reverend
     SUBDIR += py-rich
     SUBDIR += py-rnc2rng
@@ -1425,6 +1439,7 @@
     SUBDIR += py-sphinx-inline-tabs
     SUBDIR += py-sphinx-intl
     SUBDIR += py-sphinx-issues
+    SUBDIR += py-sphinx-markdown-tables
     SUBDIR += py-sphinx-me
     SUBDIR += py-sphinx-tabs
     SUBDIR += py-sphinx_press_theme
@@ -1433,6 +1448,7 @@
     SUBDIR += py-sphinxcontrib-adadomain
     SUBDIR += py-sphinxcontrib-applehelp
     SUBDIR += py-sphinxcontrib-autoprogram
+    SUBDIR += py-sphinxcontrib-bibtex
     SUBDIR += py-sphinxcontrib-bitbucket
     SUBDIR += py-sphinxcontrib-devhelp
     SUBDIR += py-sphinxcontrib-fulltoc
@@ -1458,6 +1474,7 @@
     SUBDIR += py-tinycss
     SUBDIR += py-tinycss2
     SUBDIR += py-toml
+    SUBDIR += py-tomli
     SUBDIR += py-tomlkit
     SUBDIR += py-toronado
     SUBDIR += py-towncrier
@@ -1519,6 +1536,7 @@
     SUBDIR += retext
     SUBDIR += rfcdiff
     SUBDIR += ripgrep
+    SUBDIR += ripgrep-all
     SUBDIR += ripole
     SUBDIR += rl
     SUBDIR += rman
@@ -1802,6 +1820,7 @@
     SUBDIR += sk-hyphen
     SUBDIR += sk-mythes
     SUBDIR += sl-aspell
+    SUBDIR += sl-hunspell
     SUBDIR += sl-hyphen
     SUBDIR += sl-mythes
     SUBDIR += slides

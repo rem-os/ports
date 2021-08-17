@@ -232,9 +232,9 @@ victoria-metrics:*:289:
 _gmid:*:290:
 pydio:*:291:
 sftpgo:*:292:
-# free: 293
-# free: 294
-# free: 295
+biboumi:*:293:
+krill:*:294:
+jottad:*:295:
 # free: 296
 # free: 297
 # free: 298
@@ -296,7 +296,7 @@ _iodined:*:353:
 jackett:*:354:
 nzbhydra2:*:355:
 lidarr:*:356:
-# free: 357
+bazarr:*:357:
 # free: 358
 # free: 359
 v2ray:*:360:
@@ -392,7 +392,7 @@ callweaver:*:444:
 ecartis:*:450:
 # free: 451
 # free: 452
-# free: 453
+yadifa:*:453:
 # free: 454
 inadyn:*:455:
 # free: 456

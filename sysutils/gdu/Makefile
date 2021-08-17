@@ -1,6 +1,6 @@
 PORTNAME=	gdu
 DISTVERSIONPREFIX=	v
-DISTVERSION=	5.1.1
+DISTVERSION=	5.5.0
 CATEGORIES=	sysutils
 
 MAINTAINER=	lcook@FreeBSD.org
@@ -42,6 +42,8 @@ GO_BUILDFLAGS=	-ldflags "\
                 -s -w \
 		-X github.com/${GH_ACCOUNT}/${GH_PROJECT}/${_BUILD_MAJOR}/build.Version=${_BUILD_VERSION} \
 		-X github.com/${GH_ACCOUNT}/${GH_PROJECT}/${_BUILD_MAJOR}/build.Time=${_BUILD_DATE}"
+
+CONFLICTS_INSTALL=	coreutils
 
 PLIST_FILES=	bin/${PORTNAME}
 PORTDOCS=	README.md

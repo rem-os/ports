@@ -1,7 +1,7 @@
 # Created by: Martin Pala <martinp@tildeslash.com>
 
 PORTNAME=	monit
-PORTVERSION=	5.28.0
+PORTVERSION=	5.28.1
 CATEGORIES=	sysutils
 MASTER_SITES=	https://mmonit.com/monit/dist/
 
@@ -24,8 +24,10 @@ PLIST_FILES=	bin/monit \
 
 PORTDOCS=	COPYING CHANGES
 
-OPTIONS_DEFINE=	DOCS SSL
-OPTIONS_DEFAULT=SSL
+OPTIONS_DEFINE=	DOCS PAM SSL
+OPTIONS_DEFAULT=	PAM SSL
+
+PAM_CONFIGURE_OFF=	--without-pam
 
 SSL_USES=		ssl
 SSL_CONFIGURE_OFF=	--without-ssl
